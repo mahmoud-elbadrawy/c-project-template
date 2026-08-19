@@ -7,6 +7,7 @@ int main(void)
     uint8_t battery_percentage = battery_get_percentage(battery_voltage);
     battery_status_t battery_status = battery_get_status(battery_voltage);
 
+    /* Don't forget to remove the printf statements*/
     printf("Battery Voltage: %d mV\n", battery_voltage);
     printf("Battery Percentage: %d%%\n", battery_percentage);
     printf("Battery Status: %d\n", battery_status);
