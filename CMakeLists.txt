@@ -1,0 +1,5 @@
+Cmake_minimum_required(VERSION 4.4.2)
+project(c-project-template)
+set(SRC_DIR src/main.c src/battery_monitor.c)
+add_executable(c-project-template ${SRC_DIR})
+target_include_directories(c-project-template PUBLIC include)

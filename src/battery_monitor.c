@@ -1,4 +1,4 @@
-#include "../include/battery_monitor.h"
+#include "battery_monitor.h"
 
 uint8_t battery_get_percentage(uint16_t millivolts)
 {

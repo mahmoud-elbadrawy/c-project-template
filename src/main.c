@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../include/battery_monitor.h"
+#include "battery_monitor.h"
 
 int main(void)
 {

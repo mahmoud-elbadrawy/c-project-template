@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\c-project-template.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\c-project-template.dir/objects.a @CMakeFiles\c-project-template.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -Wl,--whole-archive CMakeFiles\c-project-template.dir/objects.a -Wl,--no-whole-archive -o c-project-template.exe -Wl,--out-implib,libc-project-template.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\c-project-template.dir\linkLibs.rsp
