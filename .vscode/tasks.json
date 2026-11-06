@@ -4,14 +4,14 @@
         {
             "label": "CMake: Configure",
             "type": "shell",
-            "command": "cmake -S . -B build",
+            "command": "cmake -S . -B build/cmake",
             "group": "build",
             "problemMatcher": []
         },
         {
             "label": "CMake: Build",
             "type": "shell",
-            "command": "cmake --build build",
+            "command": "cmake --build build/cmake",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -21,19 +21,19 @@
         {
             "label": "CMake: Reconfigure + Build",
             "type": "shell",
-            "command": "cmake -S . -B build && cmake --build build",
+            "command": "cmake -S . -B build/cmake && cmake --build build/cmake",
             "problemMatcher": []
         },
         {
             "label": "CMake: Clean Build Files",
             "type": "shell",
-            "command": "cmake -E rm -rf build",
+            "command": "cmake -E rm -rf build/cmake",
             "problemMatcher": []
         },
         {
             "label": "CMake: Run Application",
             "type": "shell",
-            "command": "./build/c-project-template",
+            "command": "./build/cmake/c-project-template",
             "problemMatcher": []
         },
         {
