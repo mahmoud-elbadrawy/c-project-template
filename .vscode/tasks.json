@@ -47,7 +47,9 @@
             "type": "shell",
             "command": "ceedling test:all",
             "group": "test",
-            "problemMatcher": []
+            "problemMatcher": [
+                "$gcc"
+            ]
         },
         {
             "label": "Ceedling: Clean",
