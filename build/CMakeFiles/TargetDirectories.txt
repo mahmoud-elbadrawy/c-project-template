@@ -1,3 +1,0 @@
-D:/WorkSpace/c-project-template/build/CMakeFiles/c-project-template.dir
-D:/WorkSpace/c-project-template/build/CMakeFiles/edit_cache.dir
-D:/WorkSpace/c-project-template/build/CMakeFiles/rebuild_cache.dir
