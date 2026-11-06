@@ -6,7 +6,9 @@
             "type": "shell",
             "command": "cmake -S . -B build/cmake",
             "group": "build",
-            "problemMatcher": []
+            "problemMatcher": [
+                "$gcc"
+            ]
         },
         {
             "label": "CMake: Build",
@@ -16,13 +18,17 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": []
+            "problemMatcher": [
+                "$gcc"
+            ]
         },
         {
             "label": "CMake: Reconfigure + Build",
             "type": "shell",
             "command": "cmake -S . -B build/cmake && cmake --build build/cmake",
-            "problemMatcher": []
+            "problemMatcher": [
+                "$gcc"
+            ]
         },
         {
             "label": "CMake: Clean Build Files",
