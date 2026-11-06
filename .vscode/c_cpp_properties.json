@@ -3,6 +3,8 @@
         {
             "name": "Win32",
             "includePath": [
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/build/vendor/unity/src",
                 "${workspaceFolder}/**"
             ],
             "defines": [

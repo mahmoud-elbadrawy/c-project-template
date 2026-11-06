@@ -2,18 +2,21 @@
 
 uint8_t battery_get_percentage(uint16_t millivolts)
 {
+    uint8_t battery_percent = 0;
+
     if (millivolts <= BATTERY_MIN_MV)
     {
-        return 0;
+        battery_percent = 0;
     }
-    if (millivolts >= BATTERY_MAX_MV)
+    else if (millivolts >= BATTERY_MAX_MV)
     {
-        return 100;
+        battery_percent = 100;
     }
-
-    /* Map the battery value to percentage*/
-    uint8_t battery_percent = (uint8_t)((float)(millivolts - BATTERY_MIN_MV) / (float)(BATTERY_MAX_MV - BATTERY_MIN_MV) * 100U);
-
+    else
+    {
+        /* Map the battery value to percentage*/
+        battery_percent = (uint8_t)((float)(millivolts - BATTERY_MIN_MV) / (float)(BATTERY_MAX_MV - BATTERY_MIN_MV) * 100U);
+    }
     return battery_percent;
 }
 
