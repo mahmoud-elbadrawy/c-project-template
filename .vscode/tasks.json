@@ -33,7 +33,7 @@
         {
             "label": "CMake: Run Application",
             "type": "shell",
-            "command": "./build/cmake/c-project-template",
+            "command": "./build/cmake/c-project-template.exe",
             "problemMatcher": []
         },
         {
